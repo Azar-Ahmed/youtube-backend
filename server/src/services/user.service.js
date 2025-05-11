@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import User from "../models/user.model.js";
 import bcrypt from "bcryptjs";
 import generateToken from "../utils/jwt.utils.js";
-import uploadImage from "./fileUpload.service.js";
+import {uploadImage} from "./fileUpload.service.js";
 
 export const registerUser = async ({
   channelName,
